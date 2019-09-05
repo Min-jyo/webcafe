@@ -1,66 +1,58 @@
 @charset "utf-8";
-/* css의 규칙 처음에는 charset을 선언 */
-, ::before, *::after{
+/* 초기확 */
+*, ::before, *::after {
    box-sizing: border-box;
 }
-body{
+body {
    margin: 0;
 }
-.header, .visual, .main-content, .slogan, .footer{ /선택자의 그룹핑/
+.header, .visual, .mainContents, .slogan, .footer {
    width: 940px;
-   margin: 0 auto; /* auto는 남은영역을 계산해서 잘 나누어줌. */
+   margin: 0 auto;
 }
-.header{
-   box-sizing: border-box;
+.header {
+   box-sizing: -box;
    background-color: pink;
-   height: 10vh; /vh : 화면에 보이는 기준 /
+   height: 10vh;
 }
-.visual{
+.visual {
    background-color: lime;
    height: 120px;
 }
-.main-content{
+.mainContents {
    min-height: 400px;
    background-color: skyblue;
-   display: flex; /* main-content를 flex 컨테이너로 지정 */
+   display: flex;
    flex-direction: row;
    justify-content: space-between;
    padding: 30px;
-   /*
-   flex-end : 오른쪽 ,
-   space-around : flex-item들을 y축을 동일하게 비워줌.(abc가 있다면 a의 양옆+ b의 양옆)
-   space-between : flex-item들 y축 사이를 비워줌.
-   space-evenly : flex-item들의 y축을 동일하게 비워줌2. (abc가 있다면 a,b,c 사이를 완전 동일하게 해줌 단 익스플로러지원x)
-   */
 }
-.group{ /* flex item 들 */
+.group {
    background-color: yellow;
 }
-.group1{
+.group1 {
    flex-basis: 250px;
-   /*flex-grow: 2;
-   flex-shrink: 1;*/
-/*    flex: 50px 2 1;  */
+   /* flex-grow: 2;
+   flex-shrink: 1; */
    background-color: orange;
 }
-.group2{
+.group2 {
    flex-basis: 380px;
    /* flex-grow: 1; */
    background-color: lime;
 }
-.group3{
+.group3 {
    flex-basis: 190px;
    /* flex-grow: 2; */
-   background-color: purple;
 }
-.slogan{
+.slogan {
    background-color: orange;
    padding: 15px 0;
 }
-.footer-bg{
+.footerBg {
    background-color: silver;
    padding: 15px 0;
 }
-.footer{
+.footer {
    background-color: yellow;
 }
