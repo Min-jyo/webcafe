@@ -67,12 +67,13 @@ body {
    width: 100px;
    font-size: 1.4rem;
    text-transform: uppercase; 
-   
-   
-   
-   
-   /* inline요소는 콘텐츠 크기만큼 width만큼 생기기때문에 width 선언은 무시된다. */
 }
+
+.member li::after{
+   background-color: orange;
+   content: "가상 요소 박스";
+}
+
 .visual {
    background-color: lime;
    height: 120px;
