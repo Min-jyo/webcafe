@@ -477,7 +477,76 @@ input[type="search"]{
 }
 /* Homework */
 
+/* 새소식 */
+.new_news{
+  background-color: #1e5799;
+  position: relative; /* 더보기 위치이동 */
+}
+/* 새소식 */
 
+
+/* 새소식 배너 */
+.new_news_banner{
+  background-color: red;
+  color: orange; /* 글자색 주황색 */
+  font-weight: bold; /* 글자 두껍게 */
+
+}
+/* 새소식 배너 */
+
+/* 기사글 */
+.new_news_article{
+  background-color: orange;
+
+}
+/* 기사글 */
+
+/* 사진  */
+.new_news_figure{
+  background-color: yellow;
+  float: left;
+  margin: 0;
+}
+/* 사진 */
+
+/* 사진 제목 */
+.new_news_figcaption{
+  background-color: rgb(51, 214, 51);
+}
+/* 사진 제목 */
+
+/* h3 */
+.new_news_h3{
+  background-color: skyblue;
+}
+/* h3 */
+
+/* time */
+.new_news_time{
+  background-color: blue;
+}
+/* time */
+
+/* p */
+.new_news_p{
+  background-color: purple;
+  margin: 0;
+}
+/* p */
+
+/* more_detail */
+.new_news_more_details{
+  background-color: pink;
+  position: absolute; /* 더보기 위치이동 */
+  top: 0;
+  right: 0; /* 더보기 위치이동 */
+}
+
+.new_news_more_details::before{
+  color: hsla(110,70%,20%,1);
+}
+
+/* more_detail */
 /* Homework */
 .slogan{
   background-color: orange;
