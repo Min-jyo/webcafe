@@ -374,7 +374,7 @@ body{
   border: 0;
   margin: 0;
   padding: 0;
-  display: flex;
+  /* display: flex; */
 }
 /* .container{
   display: flex;
@@ -405,7 +405,7 @@ input[type="search"]{
 }
 /* 공지사항 및 자료실 */
 .board{
-  background: yellow;
+  
   position: relative;
 }
 .board ul, .board .more{
@@ -418,7 +418,7 @@ input[type="search"]{
   margin: 0;
   font-weight: 400;
   font-size: 1em;
-  background: skyblue;
+  
   position: absolute;
   top: 0;
 }
@@ -442,19 +442,17 @@ input[type="search"]{
   background: #fff;
 }
 .board ul{
-  background: pink;
+  
   margin: 20px 0;
   padding: 45px 0 0 0;
   list-style: none;
 }
 .board li{
-  background: lime;
   margin: 8px 0;
   display: flex;
   /* justify-content: space-between; */
 }
 .board li a{
-  background: silver;
   width:270px;
   /* width: 100%; */
   white-space: nowrap;
@@ -462,12 +460,10 @@ input[type="search"]{
   text-overflow: ellipsis;
 }
 .board time{
-  background: orange;
   /* width: 130px; */
   margin-left: auto;
 }
 .board .more{
-  background: skyblue;
   position: absolute;
   top: 0;
   right: 0;
@@ -478,98 +474,202 @@ input[type="search"]{
 /* Homework */
 
 /* 새소식 */
-.new_news{
+/* .new_news{
   background-color: #1e5799;
-  position: relative; /* 더보기 위치이동 */
-}
+  position: relative; 
+} */
 /* 새소식 */
-.new_news::before{
+/* .new_news::before{
   position: absolute;
   top: 35px;
   left: 0;
   width: 80%;
   height: 1px;
   background: linear-gradient(to right, #aaa, #eee);
-}
+} */
 
 /* 새소식 배너 */
-.new_news_banner{
+/* .new_news_banner{
   background-color: red;
-  color: orange; /* 글자색 주황색 */
-  font-weight: bold; /* 글자 두껍게 */
+  color: orange; 
+  font-weight: bold; 
   padding-bottom: 15px;
   margin-top: 0;
   margin-bottom: 15px;
   display: inline-block;
   width: 300px;
   border-bottom: 1px solid black;
-}
+} */
 /* 새소식 배너 */
 
 /* 기사글 */
-.new_news_article{
+/* .new_news_article{
   
   background-color: orange;
   padding-top: 25px;
-}
+} */
 
-.new_news_figure{
+/* .new_news_figure{
   background-color: yellow;
   float: left;
   margin: 0;
   padding-right: 20px;
-}
+} */
 
-.new_news_figure img{
+/* .new_news_figure img{
   box-shadow: 0 15px 15px 0 #aaa;
-}
+} */
 
 
 /* 사진 */
 
 /* 사진 제목 */
-.new_news_figcaption{
+/* .new_news_figcaption{
   background-color: rgb(51, 214, 51);
   text-align: center;
   margin-top: 10px;
-}
+} */
 /* 사진 제목 */
 
 /* h3 */
-.new_news_h3{
+/* .new_news_h3{
   background-color: skyblue;
   margin: 0;
-}
+} */
 /* h3 */
 
 /* time */
-.new_news_time{
+/* .new_news_time{
   background-color: blue;
   display: block;
-}
+} */
 /* time */
 
 /* p */
-.new_news_p{
+/* .new_news_p{
   background-color: purple;
   margin: 10px 0 0 0;
-}
+} */
 /* p */
 
 /* more_detail */
-.new_news_more_details{
+/* .new_news_more_details{
   background-color: pink;
-  position: absolute; /* 더보기 위치이동 */
+  position: absolute; 
   top: 0;
-  right: 0; /* 더보기 위치이동 */
-}
+  right: 0; 
+} */
 
-.new_news_more_details::before{
+/* .new_news_more_details::before{
   color: hsla(110,70%,20%,1);
-}
+} */
 
 /* more_detail */
 /* Homework */
+
+/* 새소식 */
+.news{
+  margin-top:20px;
+  position:relative;
+}
+.news::before{
+  content:"";
+  background: red linear-gradient(to right, #aaa, #fff);
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 80%;
+  height: 1px;
+}
+.news-heading{
+  margin:0;
+  font-size: 1.5rem;
+  color: #ed8625;
+}
+.news-link{
+ 
+  display:block;
+}
+.news-article{
+  
+  padding-left:130px;
+  position: relative;
+  min-height:105px;
+}
+.news-article-subject{
+  margin: 30px 0 0 0;
+  
+  font-size: 1.4rem;
+  font-weight: 450;
+}
+.news-article-date{
+ 
+  display: block;
+  margin: 5px 0 10px;
+}
+.news-article-brief{
+  
+  margin:0;
+  line-height: 1.5;
+}
+.news-article-thumbnail{
+  
+  margin: 0;
+  position: absolute;
+  top:3px;
+  left:0;
+  /* float: left; */
+}
+.news-article-thumbnail img{
+  box-shadow: 0 15px 15px 0 #aaa;
+}
+
+.news-article-thumbnail figcaption{
+  text-align: center;
+  margin-top: 15px;
+}
+.news-more{
+  position: absolute;
+  top:0;
+  right:0;
+}
+/* 
+.news-article{
+  background-color: pink;
+  position: relative;
+}
+
+.news-article-subject
+{
+  padding-left: 130px;
+}
+
+.news-article-date{
+  padding-left: 130px;
+}
+
+.news-article-brief{
+  padding-left: 130px;
+}
+
+.news-article-thumbnail{
+  background-color: orange;
+  position: absolute;
+  top:0;
+  left:0;
+  margin: 0; 
+}
+
+
+
+
+
+
+ */
+/* 신규 이벤트 및 관련 사이트 */
+.gradient-box{
+  background: yellow;
+}
 .slogan{
   background-color: orange;
   padding: 15px 0;
